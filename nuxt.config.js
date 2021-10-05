@@ -1,6 +1,7 @@
 require("dotenv").config();
 
 module.exports = {
+  target: 'static',
   server: {
     port: process.env.PORT, // default: 3000,
     host: process.env.HOST
