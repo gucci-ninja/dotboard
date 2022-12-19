@@ -68,9 +68,9 @@ module.exports = {
     strategies: {
       local: {
         endpoints: {
-          login: { url: `/api/auth/login`, method: 'post', propertyName: 'token' },
+          login: { url: `${process.env.BASE_URL}/api/auth/login`, method: 'post', propertyName: 'token' },
           logout: { url: '/api/auth/logout', method: 'post' },
-          user: { url: `/api/auth/user`, method: 'get', propertyName: 'user' }
+          user: { url: `${process.env.BASE_URL}/api/auth/user`, method: 'get', propertyName: 'user' }
         },
         // tokenRequired: true,
         // tokenType: 'bearer',
