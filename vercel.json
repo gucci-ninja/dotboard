@@ -1,9 +1,19 @@
 {
   "builds": [
     {
+        "src": "server/**/*.js",
+        "use": "@vercel/node"
+    },
+    {
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder@0.23.0",
       "config": {}
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/auth/login",
+      "dest": "/server/index.js"
     }
   ]
 }
