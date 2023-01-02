@@ -35,6 +35,7 @@
     "vuetify": "^2.3.6"
   },
   "devDependencies": {
+    "@nuxtjs/vercel-builder": "^0.24.0",
     "@nuxtjs/vuetify": "^1.11.2",
     "@vue/cli-plugin-babel": "~4.4.0",
     "@vue/cli-plugin-eslint": "~4.4.0",
